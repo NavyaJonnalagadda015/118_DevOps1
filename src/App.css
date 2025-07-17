@@ -1,0 +1,305 @@
+#container {
+  width: 100%;
+  height: 100%;
+}
+
+#header {
+  width: 100%;
+  height: 70px;
+  background: rgb(28, 236, 49);
+}
+#content{
+  width: 100%;
+  height: calc(100% - 130px);
+  background: #fafbf9;
+  overflow: auto; 
+  }
+
+#footer {
+  width: 100%;
+  height: 40px;
+  background: rgb(6, 240, 34);
+  text-align: right;
+}
+
+#header .logo {
+  width: 40px;
+  position: relative;
+  top: 15px;
+  margin-left: 10px;
+  float: left;
+}
+
+#header .logotext {
+  position: relative;
+  top: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 10px;
+  float: left;
+  color: #8c6542;
+}
+
+#header .logotext span {
+  color: #2d7ade;
+}
+
+#header .signicon {
+  width: 24px;
+  position: relative;
+  float: right;
+  top: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#header .signtext {
+  position: relative;
+  float: right;
+  top: 28px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#footer .socialmedia {
+  width: 30px;
+  padding: 5px;
+}
+
+.copyrighttext {
+  padding: 10px;
+  width: 100%
+}
+/* Test */
+
+/* Text Styling */
+.text1 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #0554f2; /* Primary color */
+  margin-bottom: 15px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+/* Search Bar Container */
+.searchbar {
+  display: flex;
+  gap: 15px;
+  justify-content: center; /* Center all inputs */
+  align-items: center; /* Align inputs vertically */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  margin-top: 20px;
+}
+
+/* Search Inputs */
+.searchtext, .searchL, .searchR {
+  width: calc(150px  - 10px); /* Three equal-width inputs with spacing */
+  min-width: 200px; /* Ensure minimum width for smaller screens */
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 2rem;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  
+  background: url('/searchicon.png') no-repeat;
+  
+  background-size: 40px 30px;
+  
+  padding-left: 40px;
+    background-position: 0px center;
+    
+}
+.searchButton{
+  width: calc(150px  - 10px);
+  background-color: #2d7ade;
+  color: #fafbf9;
+  height: 50px;
+  border-radius: 10px;
+}
+.searchButton:hover{
+  background-color: #4ffa0c;
+  cursor: pointer;
+  box-shadow: 0 0 5px #3f0cf6;
+}
+.searchtext::placeholder, 
+.searchL::placeholder, 
+.searchR::placeholder {
+  color: #aaa;
+  font-size: 2rem;
+}
+
+/* Input Hover and Focus Effects */
+.searchtext:hover, .searchL:hover, .searchR:hover,
+.searchtext:focus, .searchL:focus, .searchR:focus {
+  border-color: #1a73e8;
+  box-shadow: 0 0 5px rgba(26, 115, 232, 0.3);
+}
+
+#copyright {
+  
+  font-size: 0.9rem;
+  color: #666;
+  text-align: center; 
+  align-items: center;
+  width: 100%;
+}
+
+#popup,#popup_signup {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Semi-transparent overlay */
+  position: fixed;
+  top: 0; /* Ensure it covers the entire viewport */
+  left: 0;
+  z-index: 200; 
+  display: none; /* Initially hidden */
+}
+
+#popupwindow {
+  width: 300px;
+  height: 450px;
+  background: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional styling */
+}
+#popupHeader{
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background: rgb(240, 19, 19);
+  color: white;
+  font-size: 14pt;
+  font-weight:bold ;
+  text-align: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+#signIn{
+  width: calc(100% - 10px);
+  height: calc(100%-60px);
+  background: white;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 5px;
+
+}
+
+input{
+  width:calc(100% - 5px) ;
+  height: 30px;
+  border: 1px solid silver;
+  border-radius: 3px;
+  
+}
+
+#signIn .forgotPassword{
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  text-align: right;
+}
+#signIn .forgotPassword label{
+  color: rgb(13, 180, 104);
+  cursor: pointer;
+}
+#signIn .forgotPassword label:hover{
+  color: rgb(13, 150, 104);
+}
+#signIn .signinbutton{
+  width: 100%;
+  height: 35px;
+  background: rgb(13, 180, 104) ;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+}
+ .signinbutton:hover{
+  background: rgb(206, 231, 223);
+}
+#signIn .div1{
+  width: 100%;
+  height: 80px;
+}
+
+#signIn .div2{
+  width: 100%;
+  font-size: 7pt;
+  color: gray;
+  text-align: center;  
+}
+#signIn .div2 label{
+  display: block;
+  font-size: 9pt;
+  font-weight: bold;
+  color:rgb(13, 150, 104) ;
+  padding: 5px;
+}
+#signIn .div2 label:hover{
+  color: rgb(13, 180, 104);
+  cursor: pointer;
+}
+
+#signup{
+  width : calc(100% - 10px);
+  height: calc(100% - 60px);
+  padding:5px;
+  border-bottom-left-radius:5px;
+  border-bottom-right-radius: 5px;
+  /* display:none; */
+}
+#signup label{
+  display:block;
+  padding:10px 0px 3px;
+}
+#signup select{
+  width:55%;
+  height:30px;
+  border:1px solid silver;
+  border-radius:3px;
+}
+#signup button{
+ width:100%;
+ height:35px;
+ background:rgb(13,180,104);
+ color:white;
+ border:none;
+ border-radius:3px;
+ cursor:pointer;
+ margin-top:10px;
+}
+#signup button:hover{
+  background:rgb(13,150,104);
+}
+#signup div{
+  width:100%;
+  font-size:7pt;
+  color:gray;
+  margin-top:15px;
+}
+#signup div span{
+  color:rgb(13,180,104);
+  font-size:9pt;
+  font-weight:bold;
+  cursor:pointer;
+}
+#signup div span:hover{
+  color:rgb(13,150,104);
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .searchtext, .searchL, .searchR {
+    width: 100%; /* Full-width inputs for smaller screens */
+  }
+  .searchbar {
+    gap: 10px; /* Adjust gap for smaller screens */
+  }
+}
